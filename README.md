@@ -32,7 +32,8 @@ not on internal job names.
 
 1. validates `.roasd/app.json`,
 2. verifies the tag resolves to the workflow commit,
-3. builds Fedora 44 RPMs for the declared architectures through `tools/build-rpm`,
+3. builds Fedora 44 RPMs for the declared architectures through `tools/build-rpm`
+   (`x86_64` and/or `aarch64`, or `noarch` alone for architecture-independent packages),
 4. verifies package name, version, `.fc44`, architecture and SRPM parity,
 5. creates a draft GitHub Release,
 6. generates `SHA256SUMS` and `component-artifact-manifest-v1.json`,
